@@ -1,0 +1,97 @@
+<head>
+    <meta property="twitter:card" content="player" />
+    <meta property="twitter:title" content="Embed Games!" />
+    <meta property="og:title" content="Embed Games!" />
+    <meta property="og:type" content="video.other" />
+    <meta
+        property="twitter:description"
+        content="Games that can be embeded"
+    />
+    <meta name="twitter:player" content="https://cool-showttv.github.io/gfiles/?embed" />
+    <meta name="twitter:player:stream:content_type" content="text/html" />
+    <meta name="twitter:player:width" content="1000" />
+    <meta name="twitter:player:height" content="1000" />
+    <script>
+        function goto(a) {
+            document.location.href = "https://cool-showttv.github.io/gfiles/" + a;
+        }
+        function FS() {
+            var elem = document.documentElement;
+            if (elem.requestFullscreen) {
+                elem.requestFullscreen();
+            } else if (elem.webkitRequestFullscreen) { /* Safari */
+                elem.webkitRequestFullscreen();
+            } else if (elem.msRequestFullscreen) { /* IE11 */
+                elem.msRequestFullscreen();
+            }
+        }
+    </script>
+
+    <style>
+        
+        #bottomRight
+        {
+            position:fixed;
+            bottom:5px;
+            right:5px;
+            opacity:0.5;
+            z-index:99;
+            color:red;
+        }
+        button {
+            background-color: #4CAF50; /* Green */
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    <a href="#" onclick="goto('2048')">2048</a>
+    <a href="#" onclick="goto('astray')">astray</a>
+    <a href="#" onclick="goto('breaklock')">breaklock</a>
+    <a href="#" onclick="goto('btd4')">btd4</a>
+    <a href="#" onclick="goto('chroma')">chroma</a>
+    <a href="#" onclick="goto('cookie')">cookie</a>
+    <a href="#" onclick="goto('cubefield')">cubefield</a>
+    <a href="#" onclick="goto('dinosaur')">dinosaur</a>
+    <a href="#" onclick="goto('doodle-jump')">doodle-jump</a>
+    <a href="#" onclick="goto('drift')">drift</a>
+    <a href="#" onclick="goto('ducklife')">ducklife</a>
+    <a href="#" onclick="goto('ducklife2')">ducklife2</a>
+    <a href="#" onclick="goto('ducklife3')">ducklife3</a>
+    <a href="#" onclick="goto('ducklife4')">ducklife4</a>
+    <a href="#" onclick="goto('fireboy-and-watergirl-forest-temple')">fireboy-and-watergirl-forest-temple</a>
+    <a href="#" onclick="goto('flappy-2048')">flappy-2048</a>
+    <a href="#" onclick="goto('flappybird')">flappybird</a>
+    <a href="#" onclick="goto('friendlyfire')">friendlyfire</a>
+    <a href="#" onclick="goto('geometry')">geometry</a>
+    <a href="#" onclick="goto('gopher-kart')">gopher-kart</a>
+    <a href="#" onclick="goto('hexgl')">hexgl</a>
+    <a href="#" onclick="goto('hextris')">hextris</a>
+    <a href="#" onclick="goto('mc-classic')">mc-classic</a>
+    <a href="#" onclick="goto('microsoft-flight-simulator')">microsoft-flight-simulator</a>
+    <a href="#" onclick="goto('pacman')">pacman</a>
+    <a href="#" onclick="goto('radius-raid')">radius-raid</a>
+    <a href="#" onclick="goto('retro-bowl')">retro-bowl</a>
+    <a href="#" onclick="goto('ritz')">ritz</a>
+    <a href="#" onclick="goto('run3')">run3</a>
+    <a href="#" onclick="goto('slope')">slope</a>
+    <a href="#" onclick="goto('sm64')">sm64</a>
+    <a href="#" onclick="goto('spaceinvaders')">spaceinvaders</a>
+    <a href="#" onclick="goto('swfs')">swfs</a>
+    <a href="#" onclick="goto('vex3')">vex3</a>
+    <a href="#" onclick="goto('vex4')">vex4</a>
+    <a href="#" onclick="goto('vex5')">vex5</a>
+    <a href="#" onclick="goto('webretro')">webretro</a>
+
+    <div id="bottomRight">
+        <button onclick="FS()">
+            Go Fullscreen
+        </button>
+    </div>
+</body>
